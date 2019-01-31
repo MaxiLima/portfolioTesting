@@ -183,7 +183,7 @@ header.masthead {
 }
 
 header.masthead .intro-text {
-  padding-top: 90vh;
+  padding-top: 30vh;
   /* padding-bottom: 100px; */
 }
 
@@ -206,7 +206,7 @@ header.masthead .intro-text .intro-heading {
 @media (min-width: 768px) {
   header.masthead .intro-text {
     /* height: 100vh; */
-    padding-top: 90vh;
+    padding-top: 40vh;
     /* padding-bottom: 200px; */
   }
   header.masthead .intro-text .intro-lead-in {
@@ -784,3 +784,102 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .cont-home{
   height: 100vh;
 }
+
+.typed-cursor{
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+
+.scroll-link {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mouse {
+  max-width: 2.5rem;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+@keyframes scroll {
+  0%, 20% {
+  transform: translateY(0) scaleY(1);
+  }
+}
+
+@keyframes scroll {
+  10% {
+  opacity: 1;
+  }
+  100% {
+  transform: translateY(20px) scaleY(2);
+  opacity: 0.01;
+  }
+}
+
+.scroll {
+  animation-name: scroll;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.650, -0.550, 0.250, 1.500);
+  animation-iteration-count: infinite;
+  transform-origin: 50% 20.5px;
+  will-change: transform;
+}
+
+
+#fragment2
+{
+  margin-top:-20px;
+}
+#fragment1
+{
+  width: 25em;
+		    white-space:nowrap;
+		    overflow:hidden;
+		    -webkit-animation: frag1type 20s steps(50, end) 0s infinite;
+		    animation: frag1type 20s steps(50, end) 0s infinite;
+}
+@keyframes frag1type{
+		    
+		    from { width: 0;}
+		    37%{width:25em;}
+		    49%{width:0;}
+		    100%{width:0;}
+		}
+
+		@-webkit-keyframes frag1type{
+		    from { width: 0;}
+		    37%{width:25em;}
+		    49%{width:0;}
+		    100%{width:0;}
+		}
+#fragment2
+{
+  opacity: 0;
+			width: 25em;
+		    white-space:nowrap;
+		    overflow:hidden;
+		    -webkit-animation: frag2type 20s steps(50, end) 10s infinite;
+
+		    animation: frag2type 20s steps(50, end) 10s infinite;
+}
+@keyframes frag2type{
+		    
+		    from { width: 0; opacity:1; }
+		    37%{width:25em;opacity:1; }
+		    49%{width:0;opacity:1; }
+		    100%{width:0;opacity:1; }
+		}
+
+		@-webkit-keyframes frag2type{
+		    from { width: 0; opacity:1; }
+		    37%{width:25em;opacity:1; }
+		    49%{width:0;opacity:1; }
+		    100%{width:0;opacity:1; }
+		}
