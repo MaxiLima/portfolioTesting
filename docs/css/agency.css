@@ -125,7 +125,8 @@ img::-moz-selection {
 
 #mainNav .navbar-brand {
   color: #2FACBD;
-  font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: bold;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -175,7 +176,6 @@ img::-moz-selection {
 
 header.masthead {
   background-image: url("../img/header-bg.jpg");
-  /* height: 100%; */
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
@@ -183,8 +183,7 @@ header.masthead {
 }
 
 header.masthead .intro-text {
-  padding-top: 30vh;
-  /* padding-bottom: 100px; */
+  padding-top: 35vh;
 }
 
 header.masthead .intro-text .intro-lead-in {
@@ -205,9 +204,7 @@ header.masthead .intro-text .intro-heading {
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    /* height: 100vh; */
-    padding-top: 40vh;
-    /* padding-bottom: 200px; */
+    padding-top: 35vh;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: 40px;
@@ -832,54 +829,20 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   will-change: transform;
 }
 
-
-#fragment2
-{
-  margin-top:-20px;
+.blinker { 
+  animation-name: blinker;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1,0,0,1);
+  animation-duration: 1s;
+  /*Basic styling  */
+  display: inline-block;
+  width: 8px;
+  height: 100px;
+  margin-left: 10px;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(white,.3);
 }
-#fragment1
-{
-  width: 25em;
-		    white-space:nowrap;
-		    overflow:hidden;
-		    -webkit-animation: frag1type 20s steps(50, end) 0s infinite;
-		    animation: frag1type 20s steps(50, end) 0s infinite;
+
+@keyframes blinker { 
+  from { opacity: 1.0; } to { opacity: 0.0; }
 }
-@keyframes frag1type{
-		    
-		    from { width: 0;}
-		    37%{width:25em;}
-		    49%{width:0;}
-		    100%{width:0;}
-		}
-
-		@-webkit-keyframes frag1type{
-		    from { width: 0;}
-		    37%{width:25em;}
-		    49%{width:0;}
-		    100%{width:0;}
-		}
-#fragment2
-{
-  opacity: 0;
-			width: 25em;
-		    white-space:nowrap;
-		    overflow:hidden;
-		    -webkit-animation: frag2type 20s steps(50, end) 10s infinite;
-
-		    animation: frag2type 20s steps(50, end) 10s infinite;
-}
-@keyframes frag2type{
-		    
-		    from { width: 0; opacity:1; }
-		    37%{width:25em;opacity:1; }
-		    49%{width:0;opacity:1; }
-		    100%{width:0;opacity:1; }
-		}
-
-		@-webkit-keyframes frag2type{
-		    from { width: 0; opacity:1; }
-		    37%{width:25em;opacity:1; }
-		    49%{width:0;opacity:1; }
-		    100%{width:0;opacity:1; }
-		}
