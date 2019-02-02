@@ -36,7 +36,7 @@ h6 {
 }
 
 section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 section h2.section-heading {
@@ -57,7 +57,7 @@ section h3.section-subheading {
 
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 50px 0;
   }
 }
 
@@ -173,7 +173,7 @@ img::-moz-selection {
     font-size: 1.25em;
     padding: 12px 0;
   }
-}
+} 
 
 header.masthead {
   background-image: url("../img/header-bg.jpg");
@@ -852,7 +852,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
   color:white;
   font-family: Droid Serif;
-  font-size: 3.5vw;
+  font-size: 6.5vh;
   font-family: "Lucida Console";
   vertical-align: middle; 
 }
@@ -874,4 +874,76 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   border-radius: 50% !important;
   border-style: solid;
   border-color: #2FACBD !important;
+}
+
+.fotoProyecto{
+  border-width: 50% !important;
+  border-style: solid;
+  border-color: #2FACBD !important;
+}
+
+.bodyProyectos{
+  background-color: #343a40;
+}
+
+.tituloProyectos{
+  color:#2FACBD;
+} 
+
+.miCarousel{
+  width: 100%;
+  background-color: #343a40;
+  padding-left:25%;
+  padding-right:25%;
+}
+
+.carouselImg{
+  margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.proyectos{
+
+  padding: 25vh 15vh 15vh 15vh;
+}
+
+.column{
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 35vh;
+  overflow: hidden;
+}
+
+.grid2x2 {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.grid2x2 > div {
+  display: flex; 
+  flex-basis: calc(50% - 40px);  
+  justify-content: center;
+  flex-direction: column;
+  padding: 2.5vh;
+}
+.grid2x2 > div > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.box { margin: 20px; }
+
+.miRow{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: center;
+  padding-bottom: 5vh;
 }

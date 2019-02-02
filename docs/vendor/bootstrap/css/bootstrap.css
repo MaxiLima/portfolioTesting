@@ -565,7 +565,7 @@ pre code {
   .container {
     max-width: 1140px;
   }
-}
+} 
 
 .container-fluid {
   width: 100%;
@@ -6107,7 +6107,7 @@ a.close.disabled {
   content: "";
 }
 
-.carousel-item {
+.collapse {
   position: relative;
   display: none;
   float: left;
@@ -9885,3 +9885,5 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+
