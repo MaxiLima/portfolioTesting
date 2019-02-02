@@ -184,7 +184,7 @@ header.masthead {
 }
 
 header.masthead .intro-text {
-  padding-top: 40vh;
+  padding-top: 35vh;
 }
 
 header.masthead .intro-text .intro-lead-in {
@@ -205,7 +205,7 @@ header.masthead .intro-text .intro-heading {
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 40vh;
+    padding-top: 35vh;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: 40px;
@@ -653,6 +653,7 @@ section#contact :-ms-input-placeholder {
 footer {
   padding: 25px 0;
   text-align: center;
+  position:relative;
 }
 
 footer span.copyright {
@@ -888,7 +889,11 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 .tituloProyectos{
   color:#2FACBD;
-} 
+}
+.tituloDiv{
+  text-align: center;
+  padding-bottom: 5vh;
+}
 
 .miCarousel{
   width: 100%;
@@ -916,26 +921,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   overflow: hidden;
 }
 
-.grid2x2 {
-  min-height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-.grid2x2 > div {
-  display: flex; 
-  flex-basis: calc(50% - 40px);  
-  justify-content: center;
-  flex-direction: column;
-  padding: 2.5vh;
-}
-.grid2x2 > div > div {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.box { margin: 20px; }
 
 .miRow{
   display: -ms-flexbox;
@@ -946,4 +931,13 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   margin-left: -15px;
   justify-content: center;
   padding-bottom: 5vh;
+}
+
+.proyInf, .proyDesc{
+  text-align: center;
+  text-decoration: underline;
+}
+
+.col-md-6.espacio{
+  padding: 3vh;
 }
