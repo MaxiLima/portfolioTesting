@@ -862,14 +862,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   padding-top: 35vh;
 }
 
-.aboutBox{
-  position: relative;
-  width: 50%;
-  -ms-flex: 0 0 33.333333%;
-  flex: 0 0 33.333333%;
-  max-width: 33.333333%;
-  margin: 0 auto;
-}
 
 .foto{
   border-radius: 50% !important;
@@ -935,9 +927,12 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 .proyInf, .proyDesc{
   text-align: center;
-  text-decoration: underline;
 }
 
 .col-md-6.espacio{
   padding: 3vh;
+}
+
+.centrado{
+  justify-content: center;
 }
